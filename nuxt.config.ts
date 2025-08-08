@@ -11,4 +11,13 @@ export default defineNuxtConfig({
 		"swiper/css/pagination",
 		"~/assets/main.scss",
 	],
+	vite: {
+		css: {
+			preprocessorOptions: {
+				scss: {
+					additionalData: `@use "@/assets/variables.scss" as *;`,
+				},
+			},
+		},
+	},
 });

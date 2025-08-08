@@ -45,21 +45,14 @@ const trimmedBody = computed(() => {
 </script>
 
 <style lang="scss">
-$line: #e5e7eb;
-$text: #111827;
-$muted: #374151;
-$brand: #2563eb;
-$shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 1px rgba(16, 24, 40, 0.04);
-$shadow-md: 0 3px 8px rgba(16, 24, 40, 0.12);
-
 .card {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	width: 100%;
 	max-width: 500px;
-	background: #fff;
-	border: 1px solid $line;
+	background: $color-white;
+	border: 1px solid $border-color;
 	border-radius: 12px;
 	padding: 16px;
 	margin: 20px auto;
@@ -83,13 +76,13 @@ $shadow-md: 0 3px 8px rgba(16, 24, 40, 0.12);
 		width: 48px;
 		height: 48px;
 		border-radius: 50%;
-		border: 2px solid $line;
+		border: 2px solid $border-color;
 		background: #f3f4f6;
 	}
 
 	&-name {
 		font-size: 14px;
-		color: $brand;
+		color: $color-primary;
 		text-decoration: none;
 
 		&:hover {
@@ -97,7 +90,7 @@ $shadow-md: 0 3px 8px rgba(16, 24, 40, 0.12);
 		}
 
 		&:focus-visible {
-			outline: 2px solid rgba($brand, 0.35);
+			outline: 2px solid rgba($color-primary, 0.35);
 			outline-offset: 2px;
 			border-radius: 4px;
 		}
@@ -106,13 +99,13 @@ $shadow-md: 0 3px 8px rgba(16, 24, 40, 0.12);
 	&-title {
 		font-size: 16px;
 		font-weight: 600;
-		color: $text;
+		color: $text-color;
 		margin-bottom: 8px;
 	}
 
 	&-text {
 		font-size: 15px;
-		color: $muted;
+		color: $color-secondary;
 		line-height: 1.5;
 		margin: 0;
 	}

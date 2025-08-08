@@ -61,10 +61,6 @@ const onLeave = () => isAutoplay.value && swiper.value?.autoplay?.resume();
 </script>
 
 <style lang="scss">
-$brand: #0d6efd;
-$shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 1px rgba(16, 24, 40, 0.04);
-$shadow-md: 0 3px 8px rgba(16, 24, 40, 0.12);
-
 .swiper {
 	border-radius: 10px;
 
@@ -81,8 +77,8 @@ $shadow-md: 0 3px 8px rgba(16, 24, 40, 0.12);
 	&-button {
 		appearance: none;
 		border: 0;
-		background: $brand;
-		color: #fff;
+		background: $color-primary;
+		color: $color-white;
 		padding: 8px 14px;
 		border-radius: 8px;
 		font-size: 14px;
